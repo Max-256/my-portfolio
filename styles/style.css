@@ -100,3 +100,23 @@ a{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* conainer */
+
+.container{
+    max-width: 1140px;
+}
+
+/* block */
+
+.block{
+    width: 100%;
+}
+
+.block-skewed-left{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.block-skewed-right{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+}
