@@ -33,6 +33,7 @@ p{
 
 h1{
     font-size: 5rem;
+    margin-top: 0;
 }
 
 h2{
@@ -56,18 +57,31 @@ h2{
 /* card */
 
 .card{
-    border: 1px solid red;
     border-radius: 7px;
-    box-shadow: 0 0 60px 0.5px rgb(232, 231, 231);
+    box-shadow: 0 0 30px 10px rgb(216, 213, 213);
+    width: 30rem;
+    height: 15rem;
+    margin: 1rem auto;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-.card__image{
-    width: 100%;
-    padding: 0 10rem;
+.card:hover{
+    transform: scale(1.05);
 }
 
-.card__text{
-    padding: 1rem;
+@media screen and (max-width: 330px) {
+    .card{
+        width: 26rem;
+        height: 13rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        width: 40rem;
+        height: 20rem;
+    }
 }
 
 /* button */
@@ -85,6 +99,24 @@ h2{
     color: #fff;
 }
 
+.btn--primary:hover{
+    background: gold;
+    color: #1b0760;
+}
+
+.btn--outline{
+    background-color: #fff;
+    border: 2px solid var(--color-heading);
+    color: var(--color-heading);
+}
+
+
+.btn--outline:hover{
+    background-color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+    color: #fff;
+}
+
 a{
     text-decoration: none;
 }
@@ -93,6 +125,7 @@ a{
 
 .grid{
     display: grid;
+    column-gap: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -105,6 +138,7 @@ a{
 
 .container{
     max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* block */
@@ -113,20 +147,126 @@ a{
     width: 100%;
 }
 
-.block-skewed-left{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+.block-gray{
+    background: #f9f6f6;
 }
 
-.block-skewed-right{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+.block-skewed-left{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    padding-bottom: 2rem;
 }
 
 /* logos */
 
 .logo{
     width: 50px;
+    margin-right: 3rem;
 }
 
 .twitter{
     width: 75px;
+}
+
+/* assembly line*/
+
+.welcome{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+    .welcome{
+        letter-spacing: 30px;
+    }
+}
+
+
+/* hero */
+
+.hero{
+    padding: 5rem 0;
+}
+
+.hero__image{
+    width: 250px;
+    justify-self: center;
+    align-self: center;
+}
+
+.hero__text{
+    text-align: center;
+    line-height: 1;
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+/* work section */
+
+.work__heading{
+    text-align: center;
+}
+
+.projects{
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.p-two__image{
+    width: 100%;
+    height: 100%;
+}
+
+.p-one__image{
+    width: 100%;
+    height: 100%;
+}
+
+.project-one{
+    position: relative;
+}
+
+.host{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+.project-two{
+    position: relative;
+}
+
+.burger{
+    position: absolute;
+    top: 0;
+    color: #3d2414;
+    padding-left: 1rem;
+}
+
+.invitation{
+    text-align: center;
+}
+
+.invi{
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+/* contact */
+
+.contact{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.cont{
+    margin-bottom: 4rem;
+}
+
+/* socilas */
+
+.socials{
+    text-align: center;
 }
