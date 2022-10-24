@@ -120,3 +120,13 @@ a{
 .block-skewed-right{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
 }
+
+/* logos */
+
+.logo{
+    width: 50px;
+}
+
+.twitter{
+    width: 75px;
+}
